@@ -51,7 +51,7 @@ def build(source, per_category=20):
             "provenance": "Selected from the existing LLM-Catalyst research corpus; original abstracts are preserved with whitespace/control-code cleanup.",
             "category_note": "Labels describe collection sources, not independently adjudicated relevance or paper quality.",
             "sampling": f"First {per_category} unique nonempty abstracts per source category; deterministic, not random.",
-            "purpose": "Local demonstration and software testing; not the manuscript evaluation benchmark.",
+            "purpose": "Embedding-based literature screening and software testing.",
             "papers": papers}
 
 

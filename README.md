@@ -145,7 +145,7 @@ cleans whitespace and spreadsheet escape sequences and excludes short abstracts.
 
 These are real archived paper records, not generated scientific claims. Their
 metadata has not been independently reverified. Source categories are not a gold
-standard of query relevance, and the sample is **not the manuscript benchmark**.
+standard of query relevance.
 Full PDFs are not redistributed. Abstracts retain their original rights; review
 source licences before publishing or redistributing this sample.
 
