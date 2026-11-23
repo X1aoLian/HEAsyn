@@ -1,4 +1,4 @@
-"""Seven prompt templates adapted from the manuscript appendix."""
+"""Seven prompt templates for POP extraction."""
 MISSING = "Not reported"
 ROLE = "You are a scientific information extraction assistant specializing in electrocatalysis literature."
 SYSTEM = (

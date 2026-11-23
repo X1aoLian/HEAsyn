@@ -53,11 +53,7 @@ def load_encoder(model_name, device=None, trust_remote_code=False):
 
 
 def rank_dataset(papers, query, model_name, top_k=20, min_score=None, cache_dir=None, device="cpu"):
-    """Compute real dense embeddings and cache documents by content and model.
-
-    No keyword-based fallback is substituted for embedding similarity.
-    All scores are cosine similarities, not relevance probabilities.
-    """
+    """Rank abstracts by embedding cosine similarity; cache by content and model."""
     import numpy as np
     from collections import Counter
     from datetime import datetime, timezone

@@ -1,7 +1,6 @@
 """Build a deterministic abstract dataset from the existing research corpus.
 
-Usage: python tools/build_sample_dataset.py --source D:/MyCode/LLM-Catalyst
-No PDFs, API keys, machine-specific paths, or personal settings are copied.
+Usage: python tools/build_sample_dataset.py --source path/to/LLM-Catalyst
 """
 import argparse
 import csv
@@ -48,10 +47,8 @@ def build(source, per_category=20):
             if count == per_category:
                 break
     return {"name": "HEAsyn abstract screening sample", "version": 1,
-            "provenance": "Selected from the existing LLM-Catalyst research corpus; original abstracts are preserved with whitespace/control-code cleanup.",
-            "category_note": "Labels describe collection sources, not independently adjudicated relevance or paper quality.",
-            "sampling": f"First {per_category} unique nonempty abstracts per source category; deterministic, not random.",
-            "purpose": "Embedding-based literature screening and software testing.",
+            "source": "LLM-Catalyst",
+            "records_per_category": per_category,
             "papers": papers}
 
 

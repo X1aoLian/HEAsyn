@@ -1,10 +1,8 @@
 {
   "name": "HEAsyn abstract screening sample",
   "version": 1,
-  "provenance": "Selected from the existing LLM-Catalyst research corpus; original abstracts are preserved with whitespace/control-code cleanup.",
-  "category_note": "Labels describe collection sources, not independently adjudicated relevance or paper quality.",
-  "sampling": "First 20 unique nonempty abstracts per source category; deterministic, not random.",
-  "purpose": "Embedding-based literature screening and software testing.",
+  "source": "LLM-Catalyst",
+  "records_per_category": 20,
   "papers": [
     {
       "paper_id": "c811109d5a74bdc6556a",
