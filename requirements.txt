@@ -1,0 +1,8 @@
+# Tested runtime versions. torch can use a CPU or CUDA build for your machine.
+requests>=2.31,<3
+numpy>=1.26,<3
+torch>=2.2,<3
+sentence-transformers==5.7.0
+transformers==5.24.0
+pymupdf==2.1
+jsonschema>=4.20,<5

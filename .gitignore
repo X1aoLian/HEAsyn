@@ -1,0 +1,8 @@
+.venv/
+.cache/
+__pycache__/
+*.py[cod]
+.env
+outputs/
+heasyn_output/
+*.log
